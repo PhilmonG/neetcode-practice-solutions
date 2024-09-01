@@ -13,4 +13,3 @@ class Solution:
 numList = [1, 2, 3, 4]
 result = Solution().hasDuplicate(nums=numList)
 print(result)
-# using a set instead of a dictionary because there is no need to store a value, only check for uniqueness. we only store key, not key-value pair.
