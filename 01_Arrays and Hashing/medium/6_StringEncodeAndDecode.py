@@ -4,20 +4,12 @@ class Solution:
         self.validateConstraints(strs)
         encodedStr = ""
         for s in strs:
-            #sCoded = "#" + str(len(s)) + "#" + s
             sCoded = s + "#"
             encodedStr += sCoded
         print("encoded: " + encodedStr)
         print(self.decode(encodedStr))
         return 
     def decode(self, s: str) -> List[str]:
-        #decodedList = []
-        # for char in s:
-        #     if char == "#":
-        #         num = num + char
-        # s.rsplit("#")
-        #    decodedWord = 
-        #decodedList.append(decodedWord)
         s = s[:-1]
         return(s.split("#"))
     def validateConstraints(self,strs: List[str]) -> bool:

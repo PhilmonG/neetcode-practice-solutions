@@ -15,7 +15,7 @@ class Solution:
                     continue
 
                 section_index = (i // 3) * 3 + (j // 3)
-
+                print(f"({i}, {j}): {num} : i({i}) // 3) * 3 + (j({j}) // 3) = {section_index}")
                 if num in row[i] or num in col[j] or num in section[section_index]:
                     return False
                 
